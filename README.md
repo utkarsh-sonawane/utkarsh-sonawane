@@ -25,13 +25,13 @@
 ### 🛠 Languages & Tools
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql)
+![SQL](https://img.shields.io/badge/SQL-3E8E41?style=flat&logo=postgresql&logoColor=white) <!-- Adjusted for better contrast -->
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git)
-![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=flat&logo=visual-studio-code)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) <!-- Adjusted for visibility -->
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white) <!-- Fixed for VS Code logo -->
 
 ---
 
@@ -74,7 +74,6 @@
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white" />
   </a>
 </p>
-
 
 ---
 
