@@ -1,10 +1,6 @@
 <h1 align="center">Hey, I'm Utkarsh Sonawane</h1>
 <h3 align="center">Aspiring AI Engineer | CS Undergrad '29 | Open-Source • DSA • Research</h3>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=UtkarshSonawane&label=Profile%20views&color=0e75b6&style=flat" alt="UtkarshSonawane" />
-</p>
-
 ---
 
 🎓 **Incoming Computer Science Undergrad** at  
