@@ -56,24 +56,25 @@
 
 <p align="center">
   <a href="https://utkarsh-sonawane.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/-Website-000000?style=flat&logo=About.me&logoColor=white" />
+    <img src="https://www.svgrepo.com/show/327388/web-site.svg" alt="Website" width="40" />
   </a>
   <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
+    <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="40" />
   </a>
   <a href="https://github.com/utkarsh-sonawane" target="_blank">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" />
+    <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub" width="40" />
   </a>
   <a href="https://discord.com/users/nottekcrec" target="_blank">
-    <img src="https://img.shields.io/badge/-Discord-7289DA?style=flat&logo=discord&logoColor=white" />
+    <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord" width="40" />
   </a>
   <a href="https://www.goodreads.com/user/show/85039206-tekcrec" target="_blank">
-    <img src="https://img.shields.io/badge/-Goodreads-5D6A6A?style=flat&logo=goodreads&logoColor=white" />
+    <img src="https://www.svgrepo.com/show/508198/goodreads.svg" alt="Goodreads" width="40" />
   </a>
   <a href="mailto:utkarshsonawane67@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white" />
+    <img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" alt="Gmail" width="40" />
   </a>
 </p>
+
 
 ---
 
