@@ -8,7 +8,7 @@
 ---
 
 🎓 **Incoming Computer Science Undergrad** at  
-🇺🇸 Penn State University Park / 🇦🇪 American University of Sharjah (Fall '25)
+🇺🇸 Penn State University Park / 🇦🇪 American University of Sharjah (Fall '25) (still deciding)
 
 🧠 **Future Goals**:  
 - 🎓 MS in AI (CMU MSAII / Stanford / MIT)  
@@ -56,15 +56,25 @@
 
 <p align="center">
   <a href="https://utkarsh-sonawane.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/-Website-000?style=flat&logo=About.me&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Website-000000?style=flat&logo=About.me&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin" />
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://github.com/utkarsh-sonawane" target="_blank">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github" />
+    <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" />
+  </a>
+  <a href="https://discord.com/users/nottekcrec" target="_blank">
+    <img src="https://img.shields.io/badge/-Discord-7289DA?style=flat&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://www.goodreads.com/user/show/85039206-tekcrec" target="_blank">
+    <img src="https://img.shields.io/badge/-Goodreads-5D6A6A?style=flat&logo=goodreads&logoColor=white" />
+  </a>
+  <a href="mailto:utkarshsonawane67@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white" />
   </a>
 </p>
+
 
 ---
 
