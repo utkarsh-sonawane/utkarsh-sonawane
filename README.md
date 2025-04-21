@@ -12,8 +12,8 @@
 - 💻 Intern at top tech companies (FAANG++)
 
 📍 **Currently Working On**:
-- LeetCode (NeetCode 150) + SQL  
-- DSA + Linux + JS + React  
+- LeetCode (NeetCode 150) + SQL
+- DSA + Linux + JS + React + Git
 - My personal website + open-source projects + GitHub
 
 ---
