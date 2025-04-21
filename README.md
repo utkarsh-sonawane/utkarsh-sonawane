@@ -31,7 +31,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-<img src="https://www.svgrepo.com/show/424927/vs-code-logo-microsoft.svg" width="25" height="25" alt="VS Code" />
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
 
 ---
 
@@ -58,23 +58,18 @@
   <a href="https://utkarsh-sonawane.github.io/" target="_blank">
     <img src="https://img.shields.io/badge/-Website-000000?style=flat&logo=About.me&logoColor=white" />
   </a>
-  &nbsp;
   <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
-    <img src="https://www.svgrepo.com/show/501613/linkedin.svg" width="30" height="30" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
-  &nbsp;
   <a href="https://github.com/utkarsh-sonawane" target="_blank">
     <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" />
   </a>
-  &nbsp;
   <a href="https://discord.com/users/nottekcrec" target="_blank">
     <img src="https://img.shields.io/badge/-Discord-7289DA?style=flat&logo=discord&logoColor=white" />
   </a>
-  &nbsp;
   <a href="https://www.goodreads.com/user/show/85039206-tekcrec" target="_blank">
     <img src="https://img.shields.io/badge/-Goodreads-5D6A6A?style=flat&logo=goodreads&logoColor=white" />
   </a>
-  &nbsp;
   <a href="mailto:utkarshsonawane67@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white" />
   </a>
