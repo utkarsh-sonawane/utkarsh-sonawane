@@ -8,7 +8,7 @@
 
 🧠 **Future Goals**:  
 - 🎓 MS in AI (CMU MSAII / Stanford / MIT)  
-- 🧪 Research in Artificial Intelligence + Innovation  
+- 🧪 Research in Artificial Intelligence
 - 💻 Intern at top tech companies (FAANG++)
 
 📍 **Currently Working On**:
