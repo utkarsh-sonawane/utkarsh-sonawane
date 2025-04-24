@@ -35,8 +35,8 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=utkarsh-sonawane&show_icons=true&theme=radical" alt="utkarsh-sonawane's GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=utkarsh-sonawane&theme=radical" alt="utkarsh-sonawane's Streak" />
 </p>
+
 
 ---
 
