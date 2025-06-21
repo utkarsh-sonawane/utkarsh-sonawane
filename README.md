@@ -4,7 +4,7 @@
 ---
 
 🎓 **Incoming Computer Science Undergrad** at  
-🇺🇸 Penn State University Park / 🇦🇪 American University of Sharjah (Fall '25) (still deciding)
+🇺🇸 Penn State (Fall '25)
 
 🧠 **Future Goals**:  
 - 🎓 MS in AI (CMU MSAII / Stanford / MIT)  
