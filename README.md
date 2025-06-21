@@ -1,5 +1,5 @@
 <h1 align="center">Hey, I'm Utkarsh Sonawane</h1>
-<h3 align="center">Aspiring AI Engineer | CS Undergrad '29 | Open-Source • DSA • Research</h3>
+<h3 align="center">Aspiring AI Engineer | PSU '29 | Open-Source • DSA • Research</h3>
 
 ---
 
@@ -10,11 +10,6 @@
 - 🎓 MS in AI (CMU MSAII / Stanford / MIT)  
 - 🧪 Research in Artificial Intelligence
 - 💻 Intern at top tech companies (FAANG++)
-
-📍 **Currently Working On**:
-- LeetCode (NeetCode 150) + SQL
-- DSA + Linux + JS + React + Git
-- My personal website + open-source projects + GitHub
 
 ---
 
@@ -51,20 +46,11 @@
 ### 🔗 Connect With Me
 
 <p align="center">
-  <a href="https://utkarsh-sonawane.github.io/" target="_blank">
-    <img src="https://img.shields.io/badge/-Website-000000?style=flat&logo=About.me&logoColor=white" />
-  </a>
   <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://github.com/utkarsh-sonawane" target="_blank">
-    <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" />
-  </a>
   <a href="https://discord.com/users/nottekcrec" target="_blank">
     <img src="https://img.shields.io/badge/-Discord-7289DA?style=flat&logo=discord&logoColor=white" />
-  </a>
-  <a href="https://www.goodreads.com/user/show/85039206-tekcrec" target="_blank">
-    <img src="https://img.shields.io/badge/-Goodreads-5D6A6A?style=flat&logo=goodreads&logoColor=white" />
   </a>
   <a href="mailto:utkarshsonawane67@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat&logo=gmail&logoColor=white" />
@@ -73,4 +59,4 @@
 
 ---
 
-🧩 **Fun Fact**: I play chess (FIDE 1540 | puzzle elo 3000 | Rapid ~1800 peak), and vibe to Beethoven & Vivaldi 🎼
+🧩 **Fun Fact**: I play chess (FIDE 1540 | puzzle elo 3000 | Rapid ~1800 peak)
