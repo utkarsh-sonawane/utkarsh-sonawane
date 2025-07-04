@@ -3,8 +3,7 @@
 
 ---
 
-🎓 **Incoming Computer Science Undergrad** at  
-🇺🇸 Penn State (Fall '25)
+🎓 CS @ Penn State University
 
 🧠 **Future Goals**:  
 - 🎓 MS in AI (CMU MSAII / Stanford / MIT)  
