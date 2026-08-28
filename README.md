@@ -7,6 +7,8 @@ Honors CS @ Penn State · Class of 2028
 
 [GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
 
+Projects that combine **algorithms, AI, software engineering, and experimentation** — I prioritize understanding systems from the ground up rather than relying entirely on high-level abstractions.
+
 ---
 
 ## Highlights
@@ -148,11 +150,19 @@ Normalized in RAG pipeline
 
 <td width="50%" valign="top">
 
-### 🔬 What I Like Building
+### 🥗 Nytr
 
-Projects that combine **algorithms, AI, software engineering, and experimentation**.
+**Personalized nutrition & training agent for Penn State dining**
 
-I prioritize understanding systems from the ground up rather than relying entirely on high-level abstractions.
+`Python` `FastAPI` `PostgreSQL` `Swift` `SwiftUI` `HealthKit`
+
+**DETERMINISTIC ENGINE · HEALTHKIT SYNC · 400+ TESTS**
+
+- Combines Penn State Stacks dining data, Apple Health body-mass history, and schedule constraints into a deterministic meal-planning engine
+- Generates personalized daily meal plans validated by 400+ PostgreSQL-backed tests
+- SwiftUI iOS companion with HealthKit sync and Supabase auth
+
+**[Repository →]([https://github.com/sonawaneutkarsh/devvy](https://github.com/sonawaneutkarsh/Nytr))**
 
 </td>
 </tr>
@@ -182,12 +192,17 @@ I prioritize understanding systems from the ground up rather than relying entire
 <table>
 <tr>
 <td><b>Languages</b></td>
-<td>Python · TypeScript · C++</td>
+<td>Python · TypeScript · C++ · Swift</td>
 </tr>
 
 <tr>
 <td><b>Full-stack</b></td>
 <td>React · Node/Express · FastAPI · Vite</td>
+</tr>
+
+<tr>
+<td><b>Mobile</b></td>
+<td>SwiftUI · HealthKit</td>
 </tr>
 
 <tr>
