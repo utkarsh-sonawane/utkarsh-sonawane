@@ -51,7 +51,9 @@ Normalized in RAG pipeline
 
 ### 🧬 Clage
 
-**From-scratch NEAT engine + artificial life**
+**Evolution, but make it code.**
+
+From-scratch NEAT engine + artificial life
 
 `Python` `pytest` `matplotlib`
 
@@ -70,15 +72,18 @@ Normalized in RAG pipeline
 
 ### 🧠 MedClarity
 
-**AI-powered research across medical documents**
+**Medical PDFs, minus the detective work.**
+
+Grounded multi-document medical Q&A
 
 `TypeScript` `React` `Node/Express` `Gemini API`
 
 **PAGE-LEVEL CITATIONS · DEPLOYED · FULL-STACK**
 
-- Researches across medical documents with page-level citations
+- Plan → retrieve → audit → synthesize pipeline across multiple PDFs
+- Page-level citations that jump back to the original source
+- Conflict, trend, and discrepancy detection
 - React SPA + Express API + Gemini integration
-- Trend detection and discrepancy flags
 - Deployed application with live demo
 
 **[Repository →](https://github.com/sonawaneutkarsh/MedClarity)**  
@@ -90,9 +95,67 @@ Normalized in RAG pipeline
 <tr>
 <td width="50%" valign="top">
 
+### 🎓 ScholarAI
+
+**1,000+ government schemes, finally searchable.**
+
+`Python` `FastAPI` `LangGraph` `React` `pgvector`
+
+**FINALIST · 6,081 PARTICIPANTS · 5-PERSON TEAM**
+
+- AI platform for discovering and comparing Indian government schemes
+- 11-node LangGraph pipeline with local LLM inference and what-if simulations
+- **My role:** normalized 1,000+ schemes and built the Supabase + pgvector retrieval layer
+- Team project built for the USAII Global AI Hackathon 2026
+
+**[Repository →](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)**
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🐙 devvy
+
+**One Discord presence for your entire coding setup.**
+
+`TypeScript` `Node.js` `Discord RPC`
+
+**LOCAL DAEMON · VS CODE · OPENCODE · COMMAND CODE**
+
+- Single local daemon owns the Discord IPC connection; all publishers talk to it over HTTP
+- VS Code extension, OpenCode plugin, and Command Code mod publish live coding activity
+- Priority arbitration with heartbeats, TTL-based expiry, and activity dedup
+- No cloud service — only safe, high-level activity reaches Discord
+
+**[Repository →](https://github.com/sonawaneutkarsh/devvy)**
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🥗 Nytr
+
+**Penn State dining, but personalized.**
+
+`Python` `FastAPI` `PostgreSQL` `Swift` `SwiftUI` `HealthKit`
+
+**DETERMINISTIC ENGINE · HEALTHKIT SYNC · 400+ TESTS**
+
+- Combines Penn State Stacks dining data, Apple Health body-mass history, and schedule constraints into a deterministic meal-planning engine
+- Generates personalized daily meal plans validated by 400+ PostgreSQL-backed tests
+- SwiftUI iOS companion with HealthKit sync and Supabase auth
+
+**[Repository →](https://github.com/sonawaneutkarsh/Nytr)**
+
+</td>
+
+<td width="50%" valign="top">
+
 ### 🌱 ESP32 Soil Moisture Monitor
 
-**End-to-end IoT sensor + automated alerts**
+**A plant monitor that emails you before your plant gives up.**
 
 `C++` `ESP32` `Arduino` `SMTP`
 
@@ -107,66 +170,21 @@ Normalized in RAG pipeline
 **[Repository →](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor)**
 
 </td>
-
-<td width="50%" valign="top">
-
-### 🎓 ScholarAI
-
-**AI-powered discovery & comparison of government schemes**
-
-`Python` `FastAPI` `LangGraph` `React` `pgvector`
-
-**11-NODE AGENT PIPELINE · LOCAL LLM · 1,000+ SCHEMES**
-
-- LangGraph agent pipeline (11 nodes): eligibility → retrieve → compare → decide
-- pgvector hybrid search (vector + trigram + full-text) over gte-small embeddings
-- Local LLM (Qwen2.5) inference with what-if simulations and decision reports
-- Team project built for the USAII Global AI Hackathon 2026
-
-**[Repository →](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)**
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🐙 devvy
-
-**One Discord presence for your entire coding workflow**
-
-`TypeScript` `Node.js` `Discord RPC`
-
-**LOCAL DAEMON · VS CODE · OPENCODE · COMMAND CODE**
-
-- Single local daemon owns the Discord IPC connection; all publishers talk to it over HTTP
-- VS Code extension, OpenCode plugin, and Command Code mod publish live coding activity
-- Priority arbitration with heartbeats, TTL-based expiry, and activity dedup
-- No cloud service — only project/file basenames, language, and branch ever reach Discord
-
-**[Repository →](https://github.com/sonawaneutkarsh/devvy)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🥗 Nytr
-
-**Personalized nutrition & training agent for Penn State dining**
-
-`Python` `FastAPI` `PostgreSQL` `Swift` `SwiftUI` `HealthKit`
-
-**DETERMINISTIC ENGINE · HEALTHKIT SYNC · 400+ TESTS**
-
-- Combines Penn State Stacks dining data, Apple Health body-mass history, and schedule constraints into a deterministic meal-planning engine
-- Generates personalized daily meal plans validated by 400+ PostgreSQL-backed tests
-- SwiftUI iOS companion with HealthKit sync and Supabase auth
-
-**[Repository →]([https://github.com/sonawaneutkarsh/devvy](https://github.com/sonawaneutkarsh/Nytr))**
-
-</td>
 </tr>
 </table>
+
+---
+
+## What I Like Building
+
+AI systems, unusual simulations, and software infrastructure where I can understand what is happening under the hood.
+
+I especially enjoy:
+
+- building algorithms from scratch
+- designing experiments and benchmarks
+- finding where AI systems fail
+- turning rough ideas into reliable software
 
 ---
 
