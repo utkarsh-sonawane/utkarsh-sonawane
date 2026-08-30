@@ -1,13 +1,13 @@
 # Utkarsh Sonawane
 
-**CS student building AI/ML systems, algorithms, and full-stack software.**
+**CS student building AI systems, weird simulations, and full-stack tools that actually work.**
 
 Honors CS @ Penn State · Class of 2028  
 🏆 **USAII Global AI Hackathon 2026 Finalist** · 6,081 global participants
 
 [GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
 
-Projects that combine **algorithms, AI, software engineering, and experimentation** — I prioritize understanding systems from the ground up rather than relying entirely on high-level abstractions.
+I like building things from scratch, testing what breaks, and turning messy ideas into working systems.
 
 ---
 
