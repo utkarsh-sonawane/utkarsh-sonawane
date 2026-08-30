@@ -16,7 +16,7 @@ Projects that combine **algorithms, AI, software engineering, and experimentatio
 <table>
 <tr>
 <td align="center" width="25%">
-<h2>184</h2>
+<h2>188</h2>
 <b>Automated Tests</b><br>
 Clage
 </td>
@@ -55,7 +55,7 @@ Normalized in RAG pipeline
 
 `Python` `pytest` `matplotlib`
 
-**184 TESTS · 4 BENCHMARKS · 6 EXPERIMENTAL ENVIRONMENTS**
+**188 TESTS · 4 BENCHMARKS · 6 EXPERIMENTAL ENVIRONMENTS**
 
 - Custom NeuroEvolution of Augmenting Topologies implementation built without `neat-python`
 - Genome, mutation, crossover, speciation, and innovation ledger implemented from scratch
