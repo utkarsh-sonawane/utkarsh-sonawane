@@ -1,245 +1,86 @@
-# Utkarsh Sonawane
+<div align="center">
 
-**CS student building AI systems, weird simulations, and full-stack tools that actually work.**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/generated/hero-light.svg">
+  <img src="assets/generated/hero-dark.svg" width="840" alt="Utkarsh Sonawane — systems from first principles">
+</picture>
 
-Honors CS @ Penn State · Class of 2028  
-🏆 **USAII Global AI Hackathon 2026 Finalist** · 6,081 global participants
+<br><br>
 
-[GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
+Computer Science · Penn State · December 2028
 
-I like building things from scratch, testing what breaks, and turning messy ideas into working systems.
+[website](https://sonawaneutkarsh.github.io/) &nbsp;·&nbsp;
+[linkedin](https://linkedin.com/in/sonawaneutkarsh) &nbsp;·&nbsp;
+[email](mailto:utkarshsonawane@psu.edu)
 
----
+</div>
 
-## Highlights
+&nbsp;
 
-<table>
-<tr>
-<td align="center" width="25%">
-<h2>188</h2>
-<b>Automated Tests</b><br>
-Clage
-</td>
+CS student at Penn State. I build systems from first principles — algorithms,
+infrastructure, and grounded AI where decisions can be traced back to evidence.
 
-<td align="center" width="25%">
-<h2>4</h2>
-<b>NEAT Benchmarks</b><br>
-OR · AND · XOR · sin
-</td>
+I'm usually most interested in what sits underneath the abstraction: why a model
+behaves the way it does, what happens when an API fails halfway through a sync,
+or whether a metric actually measures what we think it measures.
 
-<td align="center" width="25%">
-<h2>6,081</h2>
-<b>Hackathon Participants</b><br>
-USAII Global AI Hackathon
-</td>
+&nbsp;
 
-<td align="center" width="25%">
-<h2>1,000+</h2>
-<b>Government Schemes</b><br>
-Normalized in RAG pipeline
-</td>
-</tr>
-</table>
+### stack
 
----
+<samp>python &nbsp; typescript &nbsp; javascript &nbsp; java &nbsp; c++ &nbsp; swift &nbsp; sql</samp><br>
+<samp>fastapi &nbsp; postgres &nbsp; supabase &nbsp; react &nbsp; pytorch &nbsp; pgvector &nbsp; healthkit &nbsp; docker &nbsp; git &nbsp; linux</samp>
 
-## Featured Projects
+&nbsp;
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### selected work
 
-### 🧬 Clage
+**Nytr** &nbsp;·&nbsp; <samp>python, fastapi, postgresql, supabase, swiftui, healthkit</samp><br>
+Evidence-driven nutrition and training system combining Penn State dining data,
+Apple HealthKit, and Hevy resistance-training history. Built around explicit
+source authority, immutable revision history, deterministic calculations, and
+PostgreSQL/Supabase with Row Level Security — not LLM estimates.
 
-**Evolution, but make it code.**
+**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, neuroevolution, artificial life</samp><br>
+NEAT implemented from scratch — genome encoding, innovation tracking, mutation,
+crossover, and speciation without third-party neuroevolution libraries (188 tests).
+Validated on logic/function benchmarks (OR, AND, XOR, sin) and evaluated inside
+a seeded 2D artificial-life environment with controlled experiment configurations
+and behavioral metrics.
 
-From-scratch NEAT engine + artificial life
+**[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; <samp>typescript, node.js, discord ipc</samp><br>
+Zero-dependency local daemon speaking Discord's IPC protocol directly — socket
+discovery, opcode framing, backoff reconnect — to arbitrate Rich Presence
+across VS Code, OpenCode, and Command Code with priority, heartbeats, TTL
+expiry, and privacy boundaries.
 
-`Python` `pytest` `matplotlib`
+**[ScholarAI](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)** &nbsp;·&nbsp; <samp>python, pgvector, supabase, fastapi</samp><br>
+USAII Global AI Hackathon 2026 finalist (6,081+ participants, 5-person team).
+Data engineer: normalized 1,000+ government schemes into structured data,
+generated vector embeddings, and built the PostgreSQL/pgvector retrieval layer.
 
-**188 TESTS · 4 BENCHMARKS · 6 EXPERIMENTAL ENVIRONMENTS**
+<br>
 
-- Custom NeuroEvolution of Augmenting Topologies implementation built without `neat-python`
-- Genome, mutation, crossover, speciation, and innovation ledger implemented from scratch
-- 2D artificial-life environment with configurable experiments
-- Behavioral-diversity metrics and visualization layer
+<sub>more &rarr; [MedClarity](https://github.com/sonawaneutkarsh/MedClarity) · [ESP32 Plant Monitor](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor) · [all repositories](https://github.com/sonawaneutkarsh?tab=repositories)</sub>
 
-**[Repository →](https://github.com/sonawaneutkarsh/Clage)**
+&nbsp;
 
-</td>
+### activity
 
-<td width="50%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/generated/activity-light.svg">
+  <img src="assets/generated/activity-dark.svg" width="840" alt="GitHub contribution activity over the last year">
+</picture>
 
-### 🧠 MedClarity
-
-**Medical PDFs, minus the detective work.**
-
-Grounded multi-document medical Q&A
-
-`TypeScript` `React` `Node/Express` `Gemini API`
-
-**PAGE-LEVEL CITATIONS · DEPLOYED · FULL-STACK**
-
-- Plan → retrieve → audit → synthesize pipeline across multiple PDFs
-- Page-level citations that jump back to the original source
-- Conflict, trend, and discrepancy detection
-- React SPA + Express API + Gemini integration
-- Deployed application with live demo
-
-**[Repository →](https://github.com/sonawaneutkarsh/MedClarity)**  
-**[Live Demo →](https://medclarity-one.vercel.app)**
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🎓 ScholarAI
-
-**1,000+ government schemes, finally searchable.**
-
-`Python` `FastAPI` `LangGraph` `React` `pgvector`
-
-**FINALIST · 6,081 PARTICIPANTS · 5-PERSON TEAM**
-
-- AI platform for discovering and comparing Indian government schemes
-- 11-node LangGraph pipeline with local LLM inference and what-if simulations
-- **My role:** normalized 1,000+ schemes and built the Supabase + pgvector retrieval layer
-- Team project built for the USAII Global AI Hackathon 2026
-
-**[Repository →](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🐙 devvy
-
-**One Discord presence for your entire coding setup.**
-
-`TypeScript` `Node.js` `Discord RPC`
-
-**LOCAL DAEMON · VS CODE · OPENCODE · COMMAND CODE**
-
-- Single local daemon owns the Discord IPC connection; all publishers talk to it over HTTP
-- VS Code extension, OpenCode plugin, and Command Code mod publish live coding activity
-- Priority arbitration with heartbeats, TTL-based expiry, and activity dedup
-- No cloud service — only safe, high-level activity reaches Discord
-
-**[Repository →](https://github.com/sonawaneutkarsh/devvy)**
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🥗 Nytr
-
-**Penn State dining, but personalized.**
-
-`Python` `FastAPI` `PostgreSQL` `Swift` `SwiftUI` `HealthKit`
-
-**DETERMINISTIC ENGINE · HEALTHKIT SYNC · 400+ TESTS**
-
-- Combines Penn State Stacks dining data, Apple Health body-mass history, and schedule constraints into a deterministic meal-planning engine
-- Generates personalized daily meal plans validated by 400+ PostgreSQL-backed tests
-- SwiftUI iOS companion with HealthKit sync and Supabase auth
-
-**[Repository →](https://github.com/sonawaneutkarsh/Nytr)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🌱 ESP32 Soil Moisture Monitor
-
-**A plant monitor that emails you before your plant gives up.**
-
-`C++` `ESP32` `Arduino` `SMTP`
-
-**CALIBRATION · FILTERING · WI-FI · SMTP**
-
-- Capacitive soil-moisture sensing
-- Dry/wet calibration with 10-sample averaging
-- Normalized 0–100 moisture scale
-- Configurable thresholds and alert deduplication
-- Wi-Fi + SMTP email notifications
-
-**[Repository →](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor)**
-
-</td>
-</tr>
-</table>
+&nbsp;
 
 ---
 
-## What I Like Building
-
-AI systems, unusual simulations, and software infrastructure where I can understand what is happening under the hood.
-
-I especially enjoy:
-
-- building algorithms from scratch
-- designing experiments and benchmarks
-- finding where AI systems fail
-- turning rough ideas into reliable software
-
----
-
-## 🏆 USAII Global AI Hackathon 2026
-
-### Finalist · 6,081 Global Participants · 5-Person Team
-
-**ScholarAI** — an AI system that helps users discover, compare, and choose the best-fit government schemes. **[Repository →](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)**
-
-**My contribution — Data Engineering**
-
-- Normalized **1,000+ scraped government schemes** into a structured schema
-- Generated **gte-small vector embeddings**
-- Built the **Supabase + pgvector** storage and retrieval layer
-- Supported the RAG-based retrieval system
-
-**Tech:** `Python` · `Selenium` · `BeautifulSoup` · `FastAPI` · `LangGraph` · `Supabase` · `pgvector` · `sentence-transformers` · `React`
-
----
-
-## ⚙️ Tech Stack
-
-<table>
-<tr>
-<td><b>Languages</b></td>
-<td>Python · TypeScript · C++ · Swift</td>
-</tr>
-
-<tr>
-<td><b>Full-stack</b></td>
-<td>React · Node/Express · FastAPI · Vite</td>
-</tr>
-
-<tr>
-<td><b>Mobile</b></td>
-<td>SwiftUI · HealthKit</td>
-</tr>
-
-<tr>
-<td><b>AI / ML</b></td>
-<td>Gemini API · LangGraph · RAG · Local LLMs · sentence-transformers</td>
-</tr>
-
-<tr>
-<td><b>Data / Infrastructure</b></td>
-<td>Supabase · pgvector · Redis · Docker</td>
-</tr>
-
-<tr>
-<td><b>Integrations</b></td>
-<td>Discord Rich Presence · VS Code · OpenCode · Command Code</td>
-</tr>
-
-<tr>
-<td><b>Hardware</b></td>
-<td>ESP32 · Arduino</td>
-</tr>
-</table>
+<sub>
+The graphics on this profile are generated by a
+<a href="scripts/generate_profile.py">Python script</a> in this repository.
+A scheduled GitHub Action fetches contribution data and regenerates the activity
+SVG daily. No third-party profile-widget services are used.
+</sub>

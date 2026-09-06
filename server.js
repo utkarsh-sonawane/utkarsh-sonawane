@@ -1,8 +1,64 @@
-import { readFileSync, mkdirSync, writeFileSync } from "node:fs";
+import { readFileSync, mkdirSync, writeFileSync, existsSync } from "node:fs";
 import { createServer } from "node:http";
+import { extname, resolve, relative, isAbsolute } from "node:path";
 import { marked } from "marked";
 
 const README_PATH = "README.md";
+const ASSETS_ROOT = resolve(".", "assets");
+
+const MIME = {
+  ".svg":  "image/svg+xml",
+  ".png":  "image/png",
+  ".jpg":  "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".json": "application/json",
+};
+
+/** Try to serve a static file from assets/. Returns true if handled. */
+function serveStatic(req, res) {
+  let pathname;
+  try {
+    pathname = decodeURIComponent((req.url || "/").split("?")[0].split("#")[0]);
+  } catch {
+    return false;
+  }
+
+  // Only handle routes under /assets/
+  if (!pathname.startsWith("/assets/")) return false;
+
+  const subpath = pathname.slice("/assets/".length);
+  const safePath = resolve(ASSETS_ROOT, subpath);
+
+  // Containment check: verify resolved path is strictly within ASSETS_ROOT
+  const rel = relative(ASSETS_ROOT, safePath);
+  if (rel === "" || rel.startsWith("..") || isAbsolute(rel)) {
+    res.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
+    res.end("Forbidden");
+    return true;
+  }
+
+  const ext = extname(safePath).toLowerCase();
+  const mime = MIME[ext];
+  if (!mime) {
+    res.writeHead(415, { "Content-Type": "text/plain; charset=utf-8" });
+    res.end("Unsupported Media Type");
+    return true;
+  }
+
+  try {
+    if (!existsSync(safePath)) {
+      res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("Not Found");
+      return true;
+    }
+    const data = readFileSync(safePath);
+    res.writeHead(200, { "Content-Type": mime });
+    res.end(data);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function renderPage() {
   const markdown = readFileSync(README_PATH, "utf8");
@@ -43,7 +99,8 @@ function renderPage() {
   h1:first-child { margin-top: 0; }
   a { color: #58a6ff; }
   img { max-width: 100%; }
-  code {
+  picture img { max-width: 100%; }
+  code, samp {
     background: #161b22;
     border: 1px solid #30363d;
     border-radius: 6px;
@@ -78,6 +135,8 @@ function renderPage() {
     color: #8b949e;
   }
   hr { border: none; border-top: 1px solid #21262d; margin: 2em 0; }
+  sub { color: #8b949e; }
+  sub a { color: #58a6ff; }
 </style>
 </head>
 <body>
@@ -104,6 +163,7 @@ if (process.argv.includes("--build")) {
   const port = Number(process.env.PORT) || 3000;
   const server = createServer((req, res) => {
     try {
+      if (serveStatic(req, res)) return;
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
       res.end(renderPage());
     } catch (err) {
