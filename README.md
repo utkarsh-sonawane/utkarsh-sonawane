@@ -12,9 +12,9 @@
 
 <img src="./assets/generated/hd-about.svg" width="620" alt="about"/>
 
-> I care about first principles, evidence, and correctness.
+i'm an honors CS student at penn state, and most of the things I build start with something that i want to improve in my life. i like making software that people can use everyday, like managing my nutrition or training, upgrading my setup or automating things. Nytr, is something that i genuinely use everyday for nutrition and training decisions. 
 
-I build backend and data systems from scratch, implement core algorithms without external libraries, and inspect what happens underneath the abstraction layer. Most interested in distributed plumbing, deterministic evaluation, and systems software.
+right now, i'm working on LLMs, agentic systems and backend infrastructure. 
 
 <img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
@@ -26,13 +26,13 @@ I build backend and data systems from scratch, implement core algorithms without
 Evidence-driven nutrition and training system integrating dining data, HealthKit, and Hevy. Immutable history, deterministic analytics, and a native iOS client.
 
 **[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, algorithms from scratch</samp><br>
-Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 188 unit and integration tests, zero ML library dependencies, validated against XOR, AND, and sine wave benchmarks across fixed seeds.
+Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 188 unit and integration tests, zero ML library dependencies, validated against OR, AND, XOR, and sine wave benchmarks across fixed seeds.
 
 **[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; <samp>typescript, devtools</samp><br>
 Local daemon for coordinating Discord Rich Presence across developer tools. Speaks Discord's IPC protocol directly with arbitration, TTL expiry, heartbeats, and reconnect handling.
 
 **[ScholarAI](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)** &nbsp;·&nbsp; <samp>python, postgresql, pgvector</samp><br>
-Retrieval and ingestion engine indexing 1,000+ Indian government schemes. High-dimensional semantic embeddings over pgvector with hybrid BM25 re-ranking and strict eligibility constraint enforcement.
+Data engineering for a government-scheme discovery platform indexing 1,000+ Indian government programs. Built normalization, embeddings, and PostgreSQL/pgvector ingestion as part of a 5-person hackathon team.
 
 <img src="./assets/generated/hd-languages.svg" width="620" alt="languages"/>
 
@@ -41,4 +41,3 @@ Retrieval and ingestion engine indexing 1,000+ Indian government schemes. High-d
 <img src="./assets/generated/langs.svg" width="620" alt="Languages by share of bytes and repository count"/>
 
 </div>
-
