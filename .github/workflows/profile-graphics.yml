@@ -2,7 +2,7 @@ name: Update Profile Graphics
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # daily at 04:00 UTC
+    - cron: '17 5 * * *'   # daily at 05:17 UTC
   workflow_dispatch:
 
 concurrency:
@@ -25,7 +25,8 @@ jobs:
       - name: Generate profile graphics
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python scripts/generate_profile.py
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/generate_profile.py
 
       - name: Commit updated assets
         run: |
@@ -35,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore(profile): refresh activity graphics"
+            git commit -m "chore(profile): refresh profile graphics"
             git push
           fi

@@ -60,18 +60,18 @@ function serveStatic(req, res) {
   }
 }
 
-function renderPage() {
+function renderPage(theme = "auto") {
   const markdown = readFileSync(README_PATH, "utf8");
   const body = marked.parse(markdown);
   return `<!doctype html>
-<html lang="en">
+<html lang="en" data-theme="${theme}">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>sonawaneutkarsh — GitHub Profile README</title>
 <style>
   :root {
-    color-scheme: dark;
+    color-scheme: light dark;
   }
   * { box-sizing: border-box; }
   body {
@@ -87,9 +87,19 @@ function renderPage() {
     padding: 10px 24px;
     font-size: 13px;
     color: #8b949e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .banner a { color: #58a6ff; text-decoration: none; }
   .banner a:hover { text-decoration: underline; }
+  .theme-toggle a {
+    margin-left: 12px;
+    padding: 2px 8px;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    font-size: 12px;
+  }
   .container {
     max-width: 920px;
     margin: 0 auto;
@@ -98,8 +108,7 @@ function renderPage() {
   h1, h2, h3, h4 { border-bottom: 1px solid #21262d; padding-bottom: 0.3em; margin-top: 1.5em; }
   h1:first-child { margin-top: 0; }
   a { color: #58a6ff; }
-  img { max-width: 100%; }
-  picture img { max-width: 100%; }
+  img { max-width: 100%; height: auto; }
   code, samp {
     background: #161b22;
     border: 1px solid #30363d;
@@ -108,39 +117,73 @@ function renderPage() {
     font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     font-size: 0.9em;
   }
-  pre {
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 6px;
-    padding: 16px;
-    overflow: auto;
-  }
-  pre code { background: none; border: none; padding: 0; }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 1em 0;
-  }
-  th, td {
-    border: 1px solid #30363d;
-    padding: 8px 12px;
-    text-align: left;
-    vertical-align: top;
-  }
-  th { background: #161b22; }
   blockquote {
     border-left: 4px solid #30363d;
     margin: 1em 0;
     padding: 0 1em;
     color: #8b949e;
   }
-  hr { border: none; border-top: 1px solid #21262d; margin: 2em 0; }
-  sub { color: #8b949e; }
-  sub a { color: #58a6ff; }
+
+  /* Light theme overrides */
+  html[data-theme="light"],
+  @media (prefers-color-scheme: light) {
+    html:not([data-theme="dark"]) body {
+      background: #ffffff;
+      color: #1f2328;
+    }
+    html:not([data-theme="dark"]) .banner {
+      background: #f6f8fa;
+      border-bottom: 1px solid #d0d7de;
+      color: #656d76;
+    }
+    html:not([data-theme="dark"]) a { color: #0969da; }
+    html:not([data-theme="dark"]) code, html:not([data-theme="dark"]) samp {
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
+      color: #1f2328;
+    }
+    html:not([data-theme="dark"]) blockquote {
+      border-left: 4px solid #d0d7de;
+      color: #656d76;
+    }
+    html:not([data-theme="dark"]) .theme-toggle a {
+      border-color: #d0d7de;
+    }
+  }
+
+  html[data-theme="light"] body {
+    background: #ffffff !important;
+    color: #1f2328 !important;
+  }
+  html[data-theme="light"] .banner {
+    background: #f6f8fa !important;
+    border-bottom: 1px solid #d0d7de !important;
+    color: #656d76 !important;
+  }
+  html[data-theme="light"] a { color: #0969da !important; }
+  html[data-theme="light"] code, html[data-theme="light"] samp {
+    background: #f6f8fa !important;
+    border: 1px solid #d0d7de !important;
+    color: #1f2328 !important;
+  }
+  html[data-theme="light"] blockquote {
+    border-left: 4px solid #d0d7de !important;
+    color: #656d76 !important;
+  }
+  html[data-theme="light"] .theme-toggle a {
+    border-color: #d0d7de !important;
+  }
 </style>
 </head>
 <body>
-  <div class="banner">Previewing <strong>README.md</strong> of <a href="https://github.com/sonawaneutkarsh/sonawaneutkarsh">sonawaneutkarsh/sonawaneutkarsh</a></div>
+  <div class="banner">
+    <div>Previewing <strong>README.md</strong> of <a href="https://github.com/sonawaneutkarsh/sonawaneutkarsh">sonawaneutkarsh/sonawaneutkarsh</a></div>
+    <div class="theme-toggle">
+      <a href="?theme=dark">Dark</a>
+      <a href="?theme=light">Light</a>
+      <a href="?theme=auto">Auto</a>
+    </div>
+  </div>
   <main class="container">
 ${body}
   </main>
@@ -152,8 +195,9 @@ ${body}
 if (process.argv.includes("--build")) {
   try {
     mkdirSync("dist", { recursive: true });
-    writeFileSync("dist/index.html", renderPage());
-    console.log("Built dist/index.html");
+    writeFileSync("dist/index.html", renderPage("dark"));
+    writeFileSync("dist/index-light.html", renderPage("light"));
+    console.log("Built dist/index.html (dark) and dist/index-light.html (light)");
   } catch (err) {
     console.error("Build failed.");
     console.error(err);
@@ -164,8 +208,10 @@ if (process.argv.includes("--build")) {
   const server = createServer((req, res) => {
     try {
       if (serveStatic(req, res)) return;
+      const parsedUrl = new URL(req.url || "/", "http://127.0.0.1");
+      const theme = parsedUrl.searchParams.get("theme") || "dark";
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-      res.end(renderPage());
+      res.end(renderPage(theme));
     } catch (err) {
       console.error(err);
       res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });

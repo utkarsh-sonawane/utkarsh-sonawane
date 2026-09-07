@@ -1,86 +1,49 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/hero-light.svg">
-  <img src="assets/generated/hero-dark.svg" width="840" alt="Utkarsh Sonawane — systems from first principles">
-</picture>
+<img src="./assets/generated/portrait.svg" width="440" alt="Utkarsh Sonawane"/>
 
 <br><br>
 
-Computer Science · Penn State · December 2028
-
-[website](https://sonawaneutkarsh.github.io/) &nbsp;·&nbsp;
+[sonawaneutkarsh.github.io](https://sonawaneutkarsh.github.io/) &nbsp;·&nbsp;
 [linkedin](https://linkedin.com/in/sonawaneutkarsh) &nbsp;·&nbsp;
 [email](mailto:utkarshsonawane@psu.edu)
 
 </div>
 
-&nbsp;
+<img src="./assets/generated/hd-about.svg" width="620" alt="about"/>
 
-CS student at Penn State. I build systems from first principles — algorithms,
-infrastructure, and grounded AI where decisions can be traced back to evidence.
+> Computer Science student at Penn State.<br>
+> First principles over frameworks; evidence and correctness over hype.
 
-I'm usually most interested in what sits underneath the abstraction: why a model
-behaves the way it does, what happens when an API fails halfway through a sync,
-or whether a metric actually measures what we think it measures.
+I build backend and data systems from scratch, implement core algorithms without external libraries, and inspect what happens underneath the abstraction layer. Most interested in distributed plumbing, deterministic evaluation, and systems software.
 
-&nbsp;
+<img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
-### stack
+<samp>python &nbsp; typescript &nbsp; c++ &nbsp; swift &nbsp; postgresql &nbsp; pgvector &nbsp; fastapi &nbsp; node &nbsp; docker &nbsp; linux &nbsp; git</samp>
 
-<samp>python &nbsp; typescript &nbsp; javascript &nbsp; java &nbsp; c++ &nbsp; swift &nbsp; sql</samp><br>
-<samp>fastapi &nbsp; postgres &nbsp; supabase &nbsp; react &nbsp; pytorch &nbsp; pgvector &nbsp; healthkit &nbsp; docker &nbsp; git &nbsp; linux</samp>
+<img src="./assets/generated/hd-projects.svg" width="620" alt="projects"/>
 
-&nbsp;
+**Nytr** &nbsp;·&nbsp; <samp>python, data systems</samp><br>
+Evidence-driven nutrition and training system integrating dining data, HealthKit, and Hevy. Immutable history, deterministic analytics, and a native iOS client.
 
-### selected work
+**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, algorithms from scratch</samp><br>
+Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 188 unit and integration tests, zero ML library dependencies, validated against XOR, AND, and sine wave benchmarks across fixed seeds.
 
-**Nytr** &nbsp;·&nbsp; <samp>python, fastapi, postgresql, supabase, swiftui, healthkit</samp><br>
-Evidence-driven nutrition and training system combining Penn State dining data,
-Apple HealthKit, and Hevy resistance-training history. Built around explicit
-source authority, immutable revision history, deterministic calculations, and
-PostgreSQL/Supabase with Row Level Security — not LLM estimates.
+**[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; <samp>typescript, devtools</samp><br>
+Local daemon for coordinating Discord Rich Presence across developer tools. Speaks Discord's IPC protocol directly with arbitration, TTL expiry, heartbeats, and reconnect handling.
 
-**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, neuroevolution, artificial life</samp><br>
-NEAT implemented from scratch — genome encoding, innovation tracking, mutation,
-crossover, and speciation without third-party neuroevolution libraries (188 tests).
-Validated on logic/function benchmarks (OR, AND, XOR, sin) and evaluated inside
-a seeded 2D artificial-life environment with controlled experiment configurations
-and behavioral metrics.
+**[ScholarAI](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)** &nbsp;·&nbsp; <samp>python, postgresql, pgvector</samp><br>
+Retrieval and ingestion engine indexing 1,000+ Indian government schemes. High-dimensional semantic embeddings over pgvector with hybrid BM25 re-ranking and strict eligibility constraint enforcement.
 
-**[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; <samp>typescript, node.js, discord ipc</samp><br>
-Zero-dependency local daemon speaking Discord's IPC protocol directly — socket
-discovery, opcode framing, backoff reconnect — to arbitrate Rich Presence
-across VS Code, OpenCode, and Command Code with priority, heartbeats, TTL
-expiry, and privacy boundaries.
+<img src="./assets/generated/hd-languages.svg" width="620" alt="languages"/>
 
-**[ScholarAI](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)** &nbsp;·&nbsp; <samp>python, pgvector, supabase, fastapi</samp><br>
-USAII Global AI Hackathon 2026 finalist (6,081+ participants, 5-person team).
-Data engineer: normalized 1,000+ government schemes into structured data,
-generated vector embeddings, and built the PostgreSQL/pgvector retrieval layer.
+<div align="center">
 
-<br>
+<img src="./assets/generated/langs.svg" width="620" alt="Languages by share of bytes and repository count"/>
 
-<sub>more &rarr; [MedClarity](https://github.com/sonawaneutkarsh/MedClarity) · [ESP32 Plant Monitor](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor) · [all repositories](https://github.com/sonawaneutkarsh?tab=repositories)</sub>
+</div>
 
-&nbsp;
+<img src="./assets/generated/hd-colophon.svg" width="620" alt="colophon"/>
 
-### activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/activity-light.svg">
-  <img src="assets/generated/activity-dark.svg" width="840" alt="GitHub contribution activity over the last year">
-</picture>
-
-&nbsp;
-
----
-
-<sub>
-The graphics on this profile are generated by a
-<a href="scripts/generate_profile.py">Python script</a> in this repository.
-A scheduled GitHub Action fetches contribution data and regenerates the activity
-SVG daily. No third-party profile-widget services are used.
-</sub>
+Every graphic on this profile is generated locally rather than loaded from third-party services.<br>
+Typography and language metrics use an inlined subset of [JetBrains Mono](scripts/fonts) for deterministic cross-platform rendering across light and dark mode.
