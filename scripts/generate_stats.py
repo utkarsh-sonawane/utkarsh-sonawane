@@ -5,6 +5,7 @@ Inspired by Andrii Drok's profile architecture (andriidrok1/andriidrok1),
 adapted for Utkarsh Sonawane's profile.
 
 Outputs:
+  assets/generated/identity.svg
   assets/generated/hd-about.svg
   assets/generated/hd-stack.svg
   assets/generated/hd-projects.svg
@@ -154,6 +155,33 @@ def hbar(x, y, w, h, cls="d-f", r=3.0):
     )
 
 
+def draw_identity():
+    """Draw centered typographic identity graphic."""
+    W = WIDTH
+    H = 110
+    fonts = font_text()
+    css = (
+        f"<style>{fonts}\n"
+        f".name {{ fill: #1f2328; font-family: {MONO}; font-weight: 600; }}\n"
+        f".sub {{ fill: #57606a; font-family: {MONO}; font-weight: 400; }}\n"
+        f".tag {{ fill: #8c959f; font-family: {MONO}; font-weight: 400; }}\n"
+        f"@media (prefers-color-scheme: dark) {{\n"
+        f"  .name {{ fill: #f0f6fc; }}\n"
+        f"  .sub {{ fill: #8b949e; }}\n"
+        f"  .tag {{ fill: #7d8590; }}\n"
+        f"}}\n"
+        f"</style>"
+    )
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">\n'
+        f'{css}\n'
+        f'<text x="{W // 2}" y="42" text-anchor="middle" class="name" font-size="30" letter-spacing="0.18em">UTKARSH SONAWANE</text>\n'
+        f'<text x="{W // 2}" y="74" text-anchor="middle" class="sub" font-size="13" letter-spacing="0.08em">Computer Science · Penn State</text>\n'
+        f'<text x="{W // 2}" y="96" text-anchor="middle" class="tag" font-size="11.5" letter-spacing="0.12em">systems from first principles</text>\n'
+        f'</svg>\n'
+    )
+
+
 def draw_heading(word):
     """Draw a section heading in monospace with a hairline rule extending to 620px."""
     FS = 16
@@ -253,7 +281,14 @@ def main():
     out_dir = os.path.abspath(args.out_dir)
     os.makedirs(out_dir, exist_ok=True)
 
-    # 1. Generate section headings
+    # 1. Generate identity graphic
+    id_path = os.path.join(out_dir, "identity.svg")
+    id_content = draw_identity()
+    with open(id_path, "w", encoding="utf-8") as f:
+        f.write(id_content)
+    print(f"Generated {id_path}")
+
+    # 2. Generate section headings
     headings = ["about", "stack", "projects", "languages", "colophon"]
     for h in headings:
         path = os.path.join(out_dir, f"hd-{h}.svg")
@@ -262,7 +297,7 @@ def main():
             f.write(content)
         print(f"Generated {path}")
 
-    # 2. Get language data (live API if token available, else factual snapshot)
+    # 3. Get language data (live API if token available, else factual snapshot)
     token = os.environ.get("GITHUB_TOKEN")
     login = os.environ.get("GH_LOGIN", "sonawaneutkarsh")
     by_size, by_repo = FACTUAL_LANGS_BY_SIZE, FACTUAL_LANGS_BY_REPO
@@ -277,7 +312,7 @@ def main():
     else:
         print("Using verified repository language metrics snapshot.")
 
-    # 3. Generate langs.svg
+    # 4. Generate langs.svg
     langs_path = os.path.join(out_dir, "langs.svg")
     langs_content = draw_langs(by_size, by_repo)
     with open(langs_path, "w", encoding="utf-8") as f:

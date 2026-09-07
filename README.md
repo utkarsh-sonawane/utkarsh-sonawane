@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="./assets/generated/portrait.svg" width="440" alt="Utkarsh Sonawane"/>
+<img src="./assets/generated/identity.svg" width="620" alt="Utkarsh Sonawane"/>
 
-<br><br>
+<br>
 
 [sonawaneutkarsh.github.io](https://sonawaneutkarsh.github.io/) &nbsp;·&nbsp;
 [linkedin](https://linkedin.com/in/sonawaneutkarsh) &nbsp;·&nbsp;
