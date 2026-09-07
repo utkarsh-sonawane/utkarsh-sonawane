@@ -2,3 +2,6 @@ node_modules/
 dist/
 __pycache__/
 *.pyc
+face.png
+face.jpg
+face.jpeg
