@@ -12,8 +12,7 @@
 
 <img src="./assets/generated/hd-about.svg" width="620" alt="about"/>
 
-> Computer Science student at Penn State.<br>
-> First principles over frameworks; evidence and correctness over hype.
+> I care about first principles, evidence, and correctness.
 
 I build backend and data systems from scratch, implement core algorithms without external libraries, and inspect what happens underneath the abstraction layer. Most interested in distributed plumbing, deterministic evaluation, and systems software.
 
@@ -43,7 +42,3 @@ Retrieval and ingestion engine indexing 1,000+ Indian government schemes. High-d
 
 </div>
 
-<img src="./assets/generated/hd-colophon.svg" width="620" alt="colophon"/>
-
-Every graphic on this profile is generated locally rather than loaded from third-party services.<br>
-Typography and language metrics use an inlined subset of [JetBrains Mono](scripts/fonts) for deterministic cross-platform rendering across light and dark mode.

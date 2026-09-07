@@ -10,7 +10,6 @@ Outputs:
   assets/generated/hd-stack.svg
   assets/generated/hd-projects.svg
   assets/generated/hd-langs.svg
-  assets/generated/hd-colophon.svg
   assets/generated/langs.svg
 
 No external dependencies — standard library only.
@@ -52,7 +51,7 @@ FACTUAL_LANGS_BY_REPO = [
 
 # GitHub dark and light palette
 LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f", rule="#d8dee4", surface="#ffffff")
-DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e", rule="#30363d", surface="#0d1117")
+DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#b1bac4", rule="#30363d", surface="#0d1117")
 
 MONO = "JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
 
@@ -155,29 +154,79 @@ def hbar(x, y, w, h, cls="d-f", r=3.0):
     )
 
 
+FONT_5X7 = {
+    'U': ["10001", "10001", "10001", "10001", "10001", "10001", "01110"],
+    'T': ["11111", "00100", "00100", "00100", "00100", "00100", "00100"],
+    'K': ["10001", "10010", "10100", "11000", "10100", "10010", "10001"],
+    'A': ["01110", "10001", "10001", "11111", "10001", "10001", "10001"],
+    'R': ["11110", "10001", "10001", "11110", "10100", "10010", "10001"],
+    'S': ["01110", "10000", "10000", "01110", "00001", "00001", "01110"],
+    'H': ["10001", "10001", "10001", "11111", "10001", "10001", "10001"],
+    'O': ["01110", "10001", "10001", "10001", "10001", "10001", "01110"],
+    'N': ["10001", "11001", "10101", "10011", "10001", "10001", "10001"],
+    'W': ["10001", "10001", "10001", "10101", "10101", "11011", "10001"],
+    'E': ["11111", "10000", "10000", "11110", "10000", "10000", "11111"],
+    ' ': ["000",   "000",   "000",   "000",   "000",   "000",   "000"]
+}
+
+
 def draw_identity():
-    """Draw centered typographic identity graphic."""
+    """Draw custom terminal dot-matrix graphic wordmark for UTKARSH SONAWANE."""
     W = WIDTH
-    H = 110
+    H = 118
+    cx = W // 2
+    cy = 44
+    step = 6.4
+    r = 2.3
+    text = "UTKARSH SONAWANE"
+
+    # Calculate total columns
+    cols = 0
+    for i, ch in enumerate(text):
+        grid = FONT_5X7.get(ch, FONT_5X7[' '])
+        cols += len(grid[0])
+        if i < len(text) - 1 and ch != ' ' and text[i + 1] != ' ':
+            cols += 1
+
+    total_w = cols * step
+    total_h = 7 * step
+    start_x = cx - total_w / 2.0 + step / 2.0
+    start_y = cy - total_h / 2.0 + step / 2.0
+
+    circles = []
+    cur_x = start_x
+    for i, ch in enumerate(text):
+        grid = FONT_5X7.get(ch, FONT_5X7[' '])
+        w = len(grid[0])
+        for row_idx, row in enumerate(grid):
+            y = start_y + row_idx * step
+            for col_idx, bit in enumerate(row):
+                if bit == '1':
+                    x = cur_x + col_idx * step
+                    circles.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}"/>')
+        cur_x += w * step
+        if i < len(text) - 1 and ch != ' ' and text[i + 1] != ' ':
+            cur_x += step
+
+    dots_svg = "\n".join(circles)
     fonts = font_text()
+
     css = (
         f"<style>{fonts}\n"
-        f".name {{ fill: #1f2328; font-family: {MONO}; font-weight: 600; }}\n"
         f".sub {{ fill: #57606a; font-family: {MONO}; font-weight: 400; }}\n"
-        f".tag {{ fill: #8c959f; font-family: {MONO}; font-weight: 400; }}\n"
+        f".wm-dots {{ fill: #1f2328; }}\n"
         f"@media (prefers-color-scheme: dark) {{\n"
-        f"  .name {{ fill: #f0f6fc; }}\n"
         f"  .sub {{ fill: #8b949e; }}\n"
-        f"  .tag {{ fill: #7d8590; }}\n"
+        f"  .wm-dots {{ fill: #f0f6fc; }}\n"
         f"}}\n"
         f"</style>"
     )
+
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none">\n'
         f'{css}\n'
-        f'<text x="{W // 2}" y="42" text-anchor="middle" class="name" font-size="30" letter-spacing="0.18em">UTKARSH SONAWANE</text>\n'
-        f'<text x="{W // 2}" y="74" text-anchor="middle" class="sub" font-size="13" letter-spacing="0.08em">Computer Science · Penn State</text>\n'
-        f'<text x="{W // 2}" y="96" text-anchor="middle" class="tag" font-size="11.5" letter-spacing="0.12em">systems from first principles</text>\n'
+        f'<g class="wm-dots">\n{dots_svg}\n</g>\n'
+        f'<text x="{W // 2}" y="100" text-anchor="middle" class="sub" font-size="13" letter-spacing="0.08em">Computer Science · Penn State</text>\n'
         f'</svg>\n'
     )
 
@@ -289,7 +338,7 @@ def main():
     print(f"Generated {id_path}")
 
     # 2. Generate section headings
-    headings = ["about", "stack", "projects", "languages", "colophon"]
+    headings = ["about", "stack", "projects", "languages"]
     for h in headings:
         path = os.path.join(out_dir, f"hd-{h}.svg")
         content = draw_heading(h)

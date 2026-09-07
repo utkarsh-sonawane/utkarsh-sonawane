@@ -62,7 +62,23 @@ function serveStatic(req, res) {
 
 function renderPage(theme = "auto") {
   const markdown = readFileSync(README_PATH, "utf8");
-  const body = marked.parse(markdown);
+  let body = marked.parse(markdown);
+  if (theme === "light") {
+    body = body.replace(/<img\s+src="\.\/assets\/generated\/([^"]+\.svg)"([^>]*)>/g, (match, svgFile, rest) => {
+      const svgPath = resolve(ASSETS_ROOT, "generated", svgFile);
+      if (existsSync(svgPath)) {
+        let svg = readFileSync(svgPath, "utf8");
+        // Remove prefers-color-scheme: dark media query block so light palette renders
+        svg = svg.replace(/@media\s*\(\s*prefers-color-scheme\s*:\s*dark\s*\)\s*\{[\s\S]*?\}\s*<\/style>/, "</style>");
+        const widthMatch = rest.match(/width="(\d+)"/);
+        if (widthMatch) {
+          svg = svg.replace(/<svg\s+/, `<svg style="max-width: ${widthMatch[1]}px; width: 100%; height: auto;" `);
+        }
+        return svg;
+      }
+      return match;
+    });
+  }
   return `<!doctype html>
 <html lang="en" data-theme="${theme}">
 <head>
