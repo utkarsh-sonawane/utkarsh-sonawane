@@ -22,7 +22,7 @@ right now, i'm working on LLMs, agentic systems and backend infrastructure.
 
 <img src="./assets/generated/hd-projects.svg" width="620" alt="projects"/>
 
-**[Nytr] (https://github.com/sonawaneutkarsh/Nytr-Portfolio)** &nbsp;·&nbsp; <samp>python, data systems</samp><br>
+**[Nytr](https://github.com/sonawaneutkarsh/Nytr-Portfolio)** &nbsp;·&nbsp; <samp>python, data systems</samp><br>
 Evidence-driven nutrition and training system integrating dining data, HealthKit, and Hevy. Immutable history, deterministic analytics, and a native iOS client.
 
 **[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, algorithms from scratch</samp><br>
